@@ -1,14 +1,14 @@
 import {Meta} from '@storybook/react'
-import { Text, TextProps } from './Text'
+import { Heading, HeadingProps } from './Heading'
 
 export default {
-    title: 'Components/Text',
-    component: Text,
+    title: 'components/Heading',
+    component: Heading,
     args: {
-        children: 'Lorem ipsum'
+        children: 'Heading H2',
+        size: 'md'
     },
-
-    argTypes: {
+    argsTypes: {
         size: {
             options: ['sm', 'md', 'lg'],
             control: {
@@ -16,7 +16,7 @@ export default {
             }
         }
     }
-} as Meta<TextProps>
+} as Meta<HeadingProps>
 
 export const Default = {}
 
@@ -34,20 +34,20 @@ export const Large = {
 
 export const CustomComponent = {
     args: {
-        asChild: 'true',
+        asChild: true,
         children: (
-            <p>Custom Component</p>
+            <h2></h2>
         )
     },
     argTypes: {
         children: {
             table: {
-                disable: true
+                disable: true,
             }
         },
         asChild: {
             table: {
-                disable: true
+                disable: true,
             }
         }
     }
