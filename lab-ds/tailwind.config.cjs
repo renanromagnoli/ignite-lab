@@ -14,12 +14,18 @@ module.exports = {
     },
 
     colors: {
-      'gray-100': '#E6E6E6',
-      'gray-400': '#969696',
-      'gray-600': '#666666',
-
-      'cyan-200': '#9CE8FC',
-      'cyan-400': '#61DAFB'
+      transparent: 'transparent',
+      black: '000',
+      white: 'fff',
+      gray: {
+        100: '#E6E6E6',
+        400: '#969696',
+        600: '#666666',
+      },
+      cyan: {
+        200: '#9CE8FC',
+        400: '#61DAFB'
+      }
     },
 
     extend: {

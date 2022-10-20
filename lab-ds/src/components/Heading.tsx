@@ -11,7 +11,7 @@ export interface HeadingProps {
 export function Heading({size='md', children, asChild}: HeadingProps){
     const Comp = asChild ? Slot : 'h2'
     return(
-        <Slot className={
+        <Comp className={
             clsx(
                 'text-gray-100 font-bold font-sans',
                 {
@@ -20,6 +20,8 @@ export function Heading({size='md', children, asChild}: HeadingProps){
                     'text-2xg': size === 'lg'
                 }
             )
-        }>{children}</Slot>
+        }>
+            {children}
+        </Comp>
     )
 }
