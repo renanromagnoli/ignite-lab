@@ -25,3 +25,9 @@ export default {
 
 export const Default = {}
 
+export const WithoutIcon = {
+    args: {
+        children: <TextInput.Input placeholder='Type your email address'/>
+    }
+}
+
